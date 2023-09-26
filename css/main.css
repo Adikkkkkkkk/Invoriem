@@ -2,6 +2,7 @@
 
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import '/css/fonts/Gilroy/stylesheet.css';
 
 /* VARIABLES */
 :root {
@@ -19,8 +20,9 @@ body {
 
 /* CONTAINER */
 .container {
-	max-width: 1825px;
-	padding: 0 100px;
+	/* max-with 1720 + padding-left-right + 30 */
+	max-width: 1750px;
+	padding: 0 15px;
 	margin: 0 auto;
 }
 
@@ -29,76 +31,44 @@ body {
 .header {
 	min-height: 100vh;
 	background-image: url(/img/header/header-img-1.jpg);
-	background-position: center;
 	background-size: cover;
+	background-position: center;
 }
 
 /* HEADER BUTTONS */
-.header__btn {
-	display: flex;
-	align-items: center;
-	column-gap: 16px;
-
-	padding: 12px 24px;
+.btn {
+	display: inline-block;
+	padding: 10px 24px;
 	border: 2px solid var(--teal);
-	background-color: transparent;
 	border-radius: 2px;
-	cursor: pointer;
 
 	font-size: 20px;
-	font-weight: 900;
-}
-.header__btn a {
+	font-weight: 800;
 	color: var(--teal);
-}
-.header__btn img path {
-	height: 200px;
-	fill: #fff;
-}
-.header__btn:hover {
-	background-color: var(--teal);
-}
-.header__btn:hover a,
-.header__btn:hover .btn__img {
-	color: #fff;
-	stroke: #fff;
-}
-
-.header__btn--white {
-	display: inline-block;
-	background-color: #114455;
-
-	border: 0;
-}
-.header__btn--white a {
-	color: #fff;
 }
 
 /* HEADER TOP */
 .header__top {
 	padding: 44px 0;
+	margin-bottom: 126px;
 }
 
+/* HEADER NAV */
 .nav {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
 
-.header__logo {
-	width: 175px;
-	height: 32px;
-}
-
 .header__links {
 	display: flex;
 	align-items: center;
-	column-gap: 116px;
+	column-gap: 118px;
 }
 
 .header__link {
 	font-size: 20px;
-	font-weight: 900;
+	font-weight: 800;
 }
 .header__link a {
 	color: var(--teal);
@@ -106,24 +76,27 @@ body {
 
 /* HEADER CONTENT */
 .header__content {
-	padding-top: 126px;
+	max-width: 1060px;
 }
 
 .header__title {
 	font-size: 80px;
-	font-weight: 900;
+	font-weight: 800;
 	max-width: 734px;
 	color: var(--teal);
+
 	margin-bottom: 48px;
 }
 
 .header__text {
-	font-family: 'Work Sans', sans-serif;
 	font-size: 34px;
 	font-weight: 400;
 	color: var(--darkGrey);
 
 	margin-bottom: 72px;
+}
+.header__text p + p {
+	margin-top: 1em;
 }
 
 .header__arrow-down {
