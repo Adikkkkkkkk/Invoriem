@@ -9,7 +9,7 @@
 	--teal: #114455;
 	--blue: #4a2ad3;
 	--darkGrey: #1f1f1f;
-	--whie: #fff;
+	--white: #fff;
 }
 
 body {
@@ -39,12 +39,64 @@ body {
 .btn {
 	display: inline-block;
 	padding: 10px 24px;
-	border: 2px solid var(--teal);
+	padding-right: 72px;
+	border: 3px solid var(--teal);
 	border-radius: 2px;
+	background-color: transparent;
 
 	font-size: 20px;
 	font-weight: 800;
 	color: var(--teal);
+
+	position: relative;
+	transition: background-color 0.2s linear, color 0.15s linear;
+}
+.btn:hover,
+.btn:focus {
+	background-color: var(--teal);
+	color: #fff;
+}
+.btn:hover::after,
+.btn:focus::after {
+	background-image: url(/img/header/arrow-right-white.svg);
+}
+.btn:active {
+	top: 1px;
+}
+
+.btn::after {
+	content: '';
+	height: 32px;
+	width: 32px;
+	background-image: url(/img/header/arrow-right-black.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	right: 24px;
+	top: 50%;
+	transform: translateY(-50%);
+
+	transition: background-image 0.2s linear;
+}
+
+.btn--big {
+	padding: 14px 32px;
+	padding-right: 80px;
+}
+
+.btn--dark {
+	background-color: var(--teal);
+	color: #fff;
+}
+.btn--dark:hover {
+	background-color: transparent;
+	color: var(--teal);
+}
+.btn--dark::after {
+	background-image: url(/img/header/arrow-right-white.svg);
+}
+.btn--dark:hover::after {
+	background-image: url(/img/header/arrow-right-black.svg);
 }
 
 /* HEADER TOP */
@@ -53,7 +105,6 @@ body {
 	margin-bottom: 126px;
 }
 
-/* HEADER NAV */
 .nav {
 	display: flex;
 	align-items: center;
@@ -65,7 +116,6 @@ body {
 	align-items: center;
 	column-gap: 118px;
 }
-
 .header__link {
 	font-size: 20px;
 	font-weight: 800;
@@ -73,21 +123,17 @@ body {
 .header__link a {
 	color: var(--teal);
 }
-
-/* HEADER CONTENT */
 .header__content {
+	font-size: 20px;
 	max-width: 1060px;
 }
-
 .header__title {
 	font-size: 80px;
 	font-weight: 800;
 	max-width: 734px;
 	color: var(--teal);
-
 	margin-bottom: 48px;
 }
-
 .header__text {
 	font-size: 34px;
 	font-weight: 400;
@@ -98,6 +144,5 @@ body {
 .header__text p + p {
 	margin-top: 1em;
 }
-
 .header__arrow-down {
 }
