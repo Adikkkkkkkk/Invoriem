@@ -4,6 +4,18 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- META -->
+	<meta name='description' content='Верстка макета Invoriem'>
+	<meta name='google' content='notranslate'>
+	<meta name='keywords' content='Верстка макетов, создание сайтов'>
+	<!-- FAVICON -->
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
 	<!-- TITLE -->
 	<title>Invoriem</title>
 	<!-- CSS -->
@@ -20,7 +32,7 @@
 
 <body>
 
-	<header class='header'>
+	<header class='header none'>
 		<div class="container">
 			<div class="header__top">
 				<nav class="nav">
@@ -64,7 +76,7 @@
 	<!-- MAIN -->
 	<main class="main">
 		<!-- CASE STUDIES -->
-		<section class="case-studies">
+		<section class="case-studies none">
 			<div class="container">
 
 				<div class="case-studies__title">
@@ -99,18 +111,30 @@
 			</div>
 
 		</section>
-		<!-- VIDEO -->
-		<section class="video">
+		<!-- ABOUT -->
+		<section class="about">
 			<div class="container">
 
-				<div class="video__title title">We are Invoriem</div>
-				<div class="video__text text">
+				<div class="about__title title">We are Invoriem</div>
+				<div class="about__text text">
 					<p>We fulfill international property developments</p>
 				</div>
 
-				<div class="video__content">
-					VIDEO
-				</div>
+				<div class="about__content">
+
+
+					<div class="video video__overlay">
+						<button class='video__btn' id='video-btn'>
+							<img src="img/video/play-btn.svg" alt="play-btn">
+						</button>
+						<img class='video__preview' src="img/video/video-picture.jpg" alt="Video">
+
+						<video class='video__object' id='video-file'>
+							<source src='img/video/video.mp4' type='video/mp4'>
+						</video>
+					</div>
+
+				</div> <!-- /.video__content -->
 
 			</div>
 		</section>
