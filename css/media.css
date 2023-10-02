@@ -1,0 +1,60 @@
+/* Tablet @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+@media (max-width: 1000px) {
+	.header__title {
+		font-size: 50px;
+		margin-bottom: 28px;
+	}
+
+	.header__text {
+		line-height: 1.57;
+		font-size: 24px;
+		margin-bottom: 50px;
+	}
+
+	.header__links {
+		column-gap: 60px;
+	}
+}
+
+/* MOBILE @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media (max-width: 600px) {
+	.header__logo {
+		margin-left: 9px;
+		max-width: 109px;
+	}
+
+	.header__links {
+		display: none;
+	}
+
+	.nav__btn {
+		display: block;
+		margin-right: 1px;
+	}
+
+	.header__content {
+		display: none;
+	}
+
+	.header__content--mobile {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		row-gap: 27px;
+
+		color: rgba(31, 31, 31, 0.7);
+		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	}
+
+	.hc--mobile__text {
+		max-width: 237px;
+		text-align: center;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 1.24;
+	}
+
+	.header__logo--mobile {
+		max-width: 244px;
+	}
+}
