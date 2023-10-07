@@ -38,6 +38,12 @@ body {
 	padding-left: calc((100% - 1750px) / 2 + 15px);
 }
 
+@media (max-width: 1749px) {
+	.container-right {
+		padding-left: 15px;
+	}
+}
+
 /* HEADER =========================================== */
 
 .header {
@@ -233,6 +239,7 @@ body {
 		rgba(255, 255, 255, 1) 80px
 	);
 	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
@@ -300,6 +307,10 @@ body {
 .video__object {
 	width: 100%;
 	vertical-align: top;
+}
+
+.video__object--mobile {
+	display: none;
 }
 
 /* FOOTER =========================================== */

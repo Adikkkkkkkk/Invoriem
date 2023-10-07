@@ -98,22 +98,25 @@
 
 			<!-- CAROUSEL -->
 			<div class="container-right">
-				<div class="slider owl-carousel owl-theme">
-					<div class="slider__item slide">
-						<h3 class='slide__title'>France</h3>
-						<img class='slide__img' src="img/slider/slider-01.jpg" alt="01">
-					</div>
-					<div class="slider__item slide">
-						<h3 class='slide__title'>Moroco</h3>
-						<img class='slide__img' src="img/slider/slider-02.jpg" alt="02">
-					</div>
-					<div class="slider__item slide">
-						<h3 class='slide__title'>Portugal</h3>
-						<img class='slide__img' src="img/slider/slider-03.jpg" alt="03">
-					</div>
-					<div class="slider__item slide">
-						<h3 class='slide__title'>London</h3>
-						<img class='slide__img' src="img/slider/slider-04.jpg" alt="04">
+
+				<div class="slider">
+					<div class="owl-carousel owl-theme">
+						<div class="slider__item slide">
+							<h3 class='slide__title'>France</h3>
+							<img class='slide__img' src="img/slider/slider-01.jpg" alt="01">
+						</div>
+						<div class="slider__item slide">
+							<h3 class='slide__title'>Moroco</h3>
+							<img class='slide__img' src="img/slider/slider-02.jpg" alt="02">
+						</div>
+						<div class="slider__item slide">
+							<h3 class='slide__title'>Portugal</h3>
+							<img class='slide__img' src="img/slider/slider-03.jpg" alt="03">
+						</div>
+						<div class="slider__item slide">
+							<h3 class='slide__title'>London</h3>
+							<img class='slide__img' src="img/slider/slider-04.jpg" alt="04">
+						</div>
 					</div>
 				</div> <!-- /.slider -->
 			</div>
@@ -135,10 +138,19 @@
 						<button class='video__btn' id='video-btn'>
 							<img src="img/video/play-btn.svg" alt="play-btn">
 						</button>
-						<img class='video__preview' src="img/video/video-picture.jpg" alt="Video">
+						<picture>
+							<source class='video__preview--mobile' srcset='img/video/video-picture-mobile.jpg'
+								media='(max-width: 600px)'>
+
+							<img class='video__preview' src="img/video/video-picture.jpg" alt="Video">
+						</picture>
 
 						<video class='video__object' id='video-file' loop>
 							<source src='img/video/video.mp4' type='video/mp4'>
+						</video>
+						<!-- MOBILE -->
+						<video class='video__object video__object--mobile' id='video-file-mobile' loop>
+							<source src='img/video/video-mobile.mp4' type='video/mp4'>
 						</video>
 					</div> <!-- /.video -->
 
@@ -149,7 +161,7 @@
 
 	</main>
 
-	<footer class='footer none'>
+	<footer class='footer'>
 		<div class="container">
 			<div class="footer__row">
 				<div class="footer__copyright">Copyright © 2020 Invoriem</div>
