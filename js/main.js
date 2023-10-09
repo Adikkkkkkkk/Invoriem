@@ -50,3 +50,18 @@ videoWrapper.addEventListener('click', function () {
 		videoMobile.pause()
 	}
 })
+
+// MOBILE NAV
+const openNavBtn = document.querySelector('#open-mobile-nav')
+const closeNavBtn = document.querySelector('#close-mobile-nav')
+const mobileNav = document.querySelector('#mobile-nav')
+
+openNavBtn.onclick = function () {
+	mobileNav.classList.remove('none')
+	document.body.classList.add('no-scroll')
+}
+
+closeNavBtn.onclick = function () {
+	mobileNav.classList.add('none')
+	document.body.classList.remove('no-scroll')
+}

@@ -16,6 +16,10 @@ html {
 	scroll-behavior: smooth;
 }
 
+.no-scroll {
+	overflow-y: hidden;
+}
+
 body {
 	/* font-family: 'Work Sans', sans-serif; */
 	font-family: 'Gilroy', sans-serif;
@@ -351,24 +355,26 @@ body {
 	column-gap: 26px;
 }
 
-/* MOBILE NAV */
+/* MOBILE NAV =======================================*/
 
 .mobile__nav {
 	background-color: #fff;
-	position: absolute;
+	position: fixed;
+	z-index: 99;
 	left: 0;
 	top: 0;
 	width: 100%;
 	min-height: 100vh;
+	overflow: scroll;
 
-	padding: 50px 24px 32px;
+	padding: 44px 24px 32px;
 }
 
 .mobile-nav__header {
 	display: flex;
 	justify-content: space-between;
-
-	margin-bottom: 66px;
+	align-items: center;
+	margin-bottom: 36px;
 }
 
 .header__logo--mobile {
@@ -377,7 +383,7 @@ body {
 }
 
 .mobile__list {
-	margin-bottom: 80px;
+	margin-bottom: 30px;
 }
 .mobile__list a {
 	color: var(--Dark-grey, #1f1f1f);
@@ -386,7 +392,7 @@ body {
 }
 
 .mobile__contacts {
-	margin-bottom: 80px;
+	margin-bottom: 10px;
 }
 
 .mobile__contacts__title {
@@ -427,13 +433,13 @@ body {
 	font-size: 16px;
 	font-weight: 500;
 
-	margin-bottom: 16px;
+	margin-bottom: 12px;
 }
 .mobile__footer__socials {
 	display: flex;
-	column-gap: 24px;
+	column-gap: 18px;
 
-	margin-bottom: 32px;
+	margin-bottom: 12px;
 }
 .social__icon img {
 	width: 24px;

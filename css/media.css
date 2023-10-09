@@ -25,7 +25,6 @@
 	}
 
 	.header__logo {
-		margin-left: 9px;
 		max-width: 109px;
 	}
 
@@ -211,5 +210,26 @@
 	.social__icon {
 		width: 24px;
 		height: 24px;
+	}
+}
+
+@media (max-width: 376px) {
+	.mobile-nav__header {
+		margin-bottom: 36px;
+	}
+	.mobile__list {
+		margin-bottom: 30px;
+	}
+	.mobile__contacts {
+		margin-bottom: 10px;
+	}
+	.mobile__contacts__title {
+		margin-bottom: 32px;
+	}
+	.mobile__footer__email {
+		margin-bottom: 12px;
+	}
+	.mobile__footer__socials {
+		margin-bottom: 12px;
 	}
 }
