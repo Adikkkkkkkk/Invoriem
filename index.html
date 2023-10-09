@@ -138,11 +138,10 @@
 						<button class='video__btn' id='video-btn'>
 							<img src="img/video/play-btn.svg" alt="play-btn">
 						</button>
-						<picture>
-							<source class='video__preview--mobile' srcset='img/video/video-picture-mobile.jpg'
-								media='(max-width: 600px)'>
+						<picture class='video__preview'>
+							<source srcset='img/video/video-picture-mobile.jpg' media='(max-width: 600px)'>
 
-							<img class='video__preview' src="img/video/video-picture.jpg" alt="Video">
+							<img src="img/video/video-picture.jpg" alt="Video">
 						</picture>
 
 						<video class='video__object' id='video-file' loop>
@@ -177,6 +176,51 @@
 			</div>
 		</div> <!-- /.container -->
 	</footer>
+
+	<section class="mobile__nav">
+		<div class="mobile-nav__header">
+			<a href="#">
+				<img class='header__logo--mobile' src="img/icons/logo.svg" alt="logo mobile">
+			</a>
+
+			<button class="nav__btn"><img src="img/header/mobile__nav-close-btn.svg" alt="nav close button"></button>
+		</div>
+
+		<nav class='mobile__list'>
+			<ul>
+				<li><a href="#!">Hello</a></li>
+				<li><a href="#!">Bonjour</a></li>
+				<li><a href="#!">Olá</a></li>
+				<li><a href="#!">Marhabaan</a></li>
+			</ul>
+		</nav>
+
+		<div class="mobile__contacts">
+			<h4 class="mobile__contacts__title">Contact us</h4>
+			<div class="mobile__contacts__row">
+				<a href='mailto:info@invoriem.com' class="mobile__contacts__email">info@invoriem.com</a>
+				<a href='tel:+55512345258' class="mobile__contacts__number">+555 1234 52 58</a>
+				<address class="mobile__contacts__address">
+					3517 W. Gray St.<br>
+					Utica, Pennsylvania <br>
+					57867</address>
+			</div>
+		</div> <!-- /.mobile__contacts -->
+
+		<footer class="mobile__footer">
+			<a class='mobile__footer__email' href="mailto:info@invoriem.com">info@invoriem.com</a>
+
+			<div class="mobile__footer__socials">
+				<a href="#!" class='social__icon'><img src="img/footer/instagram.svg" alt="Instagram"></a>
+				<a href="#!" class='social__icon'><img src="img/footer/facebook.svg" alt="Facebook"></a>
+				<a href="#!" class='social__icon'><img src="img/footer/twitter.svg" alt="Twitter"></a>
+				<a href="#!" class='social__icon'><img src="img/footer/linkedIn.svg" alt="LinkedIn"></a>
+			</div>
+
+			<p class="footer__copyright">Copyright © 2020 Invoriem</p>
+		</footer>
+
+	</section>
 
 	<!-- JQUERY -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"

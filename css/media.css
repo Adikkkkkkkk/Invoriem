@@ -1,3 +1,5 @@
+@import '/css/main.css';
+
 /* Tablet @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 @media (max-width: 1000px) {
 	.header__title {
@@ -129,13 +131,17 @@
 	}
 
 	.about__text {
-		max-width: 291px;
+		width: 100%;
 		margin-bottom: 40px;
+	}
+	@media (max-width: 380px) {
+		.about__text {
+			width: 291px;
+		}
 	}
 
 	.video {
-		max-width: 327px;
-		height: 338px;
+		width: 100%;
 		position: relative;
 	}
 
@@ -144,9 +150,9 @@
 		justify-content: center;
 	}
 
-	.video__preview--mobile {
-		width: 327px;
-		height: 338px;
+	.video__preview,
+	.video__preview img {
+		width: 100%;
 	}
 
 	.video__btn img {
@@ -169,7 +175,7 @@
 
 	.footer__row {
 		display: flex;
-		flex-wrap: wrap;
+		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		gap: 32px;
@@ -177,7 +183,7 @@
 
 	.footer__nav {
 		display: flex;
-		flex-wrap: wrap;
+		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 
@@ -198,7 +204,12 @@
 		letter-spacing: 0.8px;
 	}
 
+	.footer__email a {
+		color: var(--blue);
+	}
+
 	.social__icon {
 		width: 24px;
+		height: 24px;
 	}
 }
