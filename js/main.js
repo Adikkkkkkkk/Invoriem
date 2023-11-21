@@ -65,3 +65,11 @@ closeNavBtn.onclick = function () {
 	mobileNav.classList.add('none')
 	document.body.classList.remove('no-scroll')
 }
+
+// Get current year
+const footerYear = document.querySelectorAll('.current-year')
+const currYear = new Date().getFullYear()
+
+footerYear.forEach(function (el) {
+	el.textContent = currYear
+})
